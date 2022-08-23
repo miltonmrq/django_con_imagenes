@@ -9,7 +9,7 @@ class Empleado(models.Model):
     email = models.EmailField(max_length=255)
     nombre = models.CharField(max_length=200)
     apellido = models.CharField(max_length=200)
-    imagen = models.ImageField(upload_to='static/images', height_field=None, width_field=None, max_length=100)
+    imagen = models.ImageField(upload_to='aplicacion/static/images', height_field=None, width_field=None, max_length=100)
     descripcion = models.TextField()
 
     def publish(self):
